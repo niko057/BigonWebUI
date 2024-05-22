@@ -1,0 +1,82 @@
+﻿<!-- Breadcrumb Start -->
+<div class="breadcrumb-area ptb-50">
+    <div class="container">
+        <div class="breadcrumb">
+            <ul>
+                <li><a asp-controller="home" asp-action="index">Home</a></li>
+                <li asp-active-route="pages"><a asp-controller="pages" asp-action="login">Login</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Container End -->
+</div>
+<!-- Breadcrumb End -->
+<!-- LogIn Page Start -->
+<div class="log-in pb-50">
+    <div class="container">
+        <div class="row">
+            <!-- New Customer Start -->
+            <div class="col-md-6 mb-4 mb-lg-0">
+                <div class="well">
+                    <div class="new-customer">
+                        <h3>NEW CUSTOMER</h3>
+                        <p class="mtb-10"><strong>Register</strong></p>
+                        <p>By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made</p>
+                        <a class="customer-btn" href="register.html">continue</a>
+                    </div>
+                </div>
+            </div>
+            <!-- New Customer End -->
+            <!-- Returning Customer Start -->
+            <div class="col-md-6">
+                <div class="well">
+                    <div class="return-customer">
+                        <h3 class="mb-10">RETURNING CUSTOMER</h3>
+                        <p class="mb-10"><strong>I am a returning customer</strong></p>
+                        <form action="#">
+                            <div class="form-group">
+                                <label class="control-label">Enter you email address here...</label>
+                                <input type="text" name="email" placeholder="Enter you email address here..." id="input-email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Password</label>
+                                <input type="text" name="pass" placeholder="Password" id="input-password" class="form-control">
+                            </div>
+                            <p class="lost-password"><a href="forgot-password.html">Forgot password?</a></p>
+                            <input type="submit" value="Login" class="return-customer-btn">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Returning Customer End -->
+
+        </div>
+        <!-- Row End -->
+    </div>
+    <!-- Container End -->
+</div>
+<!-- LogIn Page End -->
+<!-- Signup Newsletter Start -->
+<div class="newsletter">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="main-news-desc">
+                    <div class="news-desc">
+                        <h3>Sign Up For <span>Newsletters</span></h3>
+                        <p>Get e-mail updates about our latest shop and special offers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="newsletter-box">
+                    <form action="#">
+                        <input class="subscribe" placeholder="Enter your email address" name="email" id="subscribe" type="text">
+                        <button type="submit" class="submit">subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Signup-Newsletter End -->

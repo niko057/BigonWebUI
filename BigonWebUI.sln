@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigonWebUI", "BigonWebUI.csproj", "{409C0BF5-EFA6-48CC-B9D6-370F7F5D209E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{409C0BF5-EFA6-48CC-B9D6-370F7F5D209E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{409C0BF5-EFA6-48CC-B9D6-370F7F5D209E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{409C0BF5-EFA6-48CC-B9D6-370F7F5D209E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{409C0BF5-EFA6-48CC-B9D6-370F7F5D209E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D6F18E72-55AB-4414-882E-E453C48B2521}
+	EndGlobalSection
+EndGlobal

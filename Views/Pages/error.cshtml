@@ -1,0 +1,73 @@
+﻿<!-- Breadcrumb Start -->
+<div class="breadcrumb-area ptb-50">
+    <div class="container">
+        <div class="breadcrumb">
+            <ul>
+                <li><a asp-controller="home" asp-action="index">Home</a></li>
+                <li asp-active-route="pages"><a asp-controller="pages" asp-action="error">404</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Container End -->
+</div>
+<!-- Breadcrumb End -->
+<!-- Error 404 Area Start -->
+<div class="error404-area pb-50 pt-20">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="error-wrapper text-center">
+                    <div class="error-text">
+                        <h1>404</h1>
+                        <h2>Opps! PAGE NOT BE FOUND</h2>
+                        <p>
+                            Sorry but the page you are looking for does not exist, have
+                            been removed, name changed or is temporarity unavailable.
+                        </p>
+                    </div>
+                    <div class="search-error">
+                        <form id="search-form" action="#">
+                            <input type="text" placeholder="Search" />
+                            <button><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                    <div class="error-button">
+                        <a href="index.html">Back to home page</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Error 404 Area End -->
+<!-- Signup Newsletter Start -->
+<div class="newsletter">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="main-news-desc">
+                    <div class="news-desc">
+                        <h3>Sign Up For <span>Newsletters</span></h3>
+                        <p>
+                            Get e-mail updates about our latest shop and special offers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="newsletter-box">
+                    <form action="#">
+                        <input class="subscribe"
+                               placeholder="Enter your email address"
+                               name="email"
+                               id="subscribe"
+                               type="text" />
+                        <button type="submit" class="submit">subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Signup-Newsletter End -->

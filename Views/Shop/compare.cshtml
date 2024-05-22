@@ -1,0 +1,160 @@
+﻿<!-- Breadcrumb Start -->
+<div class="breadcrumb-area ptb-50">
+    <div class="container">
+        <div class="breadcrumb">
+            <ul>
+                <li><a asp-controller="home" asp-action="index">Home</a></li>
+                <li asp-active-route="shop"><a asp-controller="shop" asp-action="compare">Comapre</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Container End -->
+</div>
+<!-- Breadcrumb End -->
+<!-- Compare Page Start -->
+<div class="compare-product pb-50">
+    <div class="container">
+        <div class="table-responsive">
+            <table class="table text-center compare-content">
+                <tbody>
+                    <tr>
+                        <td class="product-title">Product</td>
+                        <td class="product-description">
+                            <div class="compare-details">
+                                <div class="compare-detail-img">
+                                    <a href="#"><img src="~/assets/img/products/22.jpg" alt="compare-product"></a>
+                                </div>
+                                <div class="compare-detail-content">
+                                    <span>laptop</span>
+                                    <h4><a href="product.html">samsung notebook pro</a></h4>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="product-description">
+                            <div class="compare-details">
+                                <div class="compare-detail-img">
+                                    <a href="#"><img src="~/assets/img/products/13.jpg" alt="compare-product"></a>
+                                </div>
+                                <span>mobile</span>
+                                <h4><a href="product.html">samsung c7 pro</a></h4>
+                            </div>
+                        </td>
+                        <td class="product-description">
+                            <div class="compare-details">
+                                <div class="compare-detail-img">
+                                    <a href="#"><img src="~/assets/img/products/8.jpg" alt="compare-product"></a>
+                                </div>
+                                <span>Games</span>
+                                <h4><a href="product.html">play station x 22</a></h4>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="product-title">Description</td>
+                        <td class="product-description">
+                            <p>Impressively thin and light, the HP EliteBook 840 empowers users to create, connect, and collaborate, using enterprise-class performance</p>
+                        </td>
+                        <td class="product-description">
+                            <p>Impressively thin and light, the HP EliteBook 840 empowers users to create, connect, and collaborate, using enterprise-class performance</p>
+                        </td>
+                        <td class="product-description">
+                            <p>Impressively thin and light, the HP EliteBook 840 empowers users to create, connect, and collaborate, using enterprise-class performance</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="product-title">Price</td>
+                        <td class="product-description">$235</td>
+                        <td class="product-description">$275</td>
+                        <td class="product-description">$190</td>
+                    </tr>
+                    <tr>
+                        <td class="product-title">Color</td>
+                        <td class="product-description">Black</td>
+                        <td class="product-description">Black</td>
+                        <td class="product-description">Black</td>
+                    </tr>
+                    <tr>
+                        <td class="product-title">Stock</td>
+                        <td class="product-description">In Stock</td>
+                        <td class="product-description">Stock Out</td>
+                        <td class="product-description">In Stock</td>
+                    </tr>
+                    <tr>
+                        <td class="product-title">Add to cart</td>
+                        <td class="product-description">
+                            <a class="compare-cart text-uppercase" href="cart.html"><i class="fa fa-shopping-cart"></i>add to cart</a>
+                        </td>
+                        <td class="product-description">
+                            <a class="compare-cart text-uppercase" href="cart.html"><i class="fa fa-shopping-cart"></i>add to cart</a>
+                        </td>
+                        <td class="product-description">
+                            <a class="compare-cart text-uppercase" href="cart.html"><i class="fa fa-shopping-cart"></i>add to cart</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="product-title">Delete</td>
+                        <td class="product-description"><i class="fa fa-trash-o"></i></td>
+                        <td class="product-description"><i class="fa fa-trash-o"></i></td>
+                        <td class="product-description"><i class="fa fa-trash-o"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="product-title">Rating</td>
+                        <td class="product-description">
+                            <div class="product-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                        </td>
+                        <td class="product-description">
+                            <div class="product-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </td>
+                        <td class="product-description">
+                            <div class="product-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>
+<!-- Compare Page End -->
+<!-- Signup Newsletter Start -->
+<div class="newsletter">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="main-news-desc">
+                    <div class="news-desc">
+                        <h3>Sign Up For <span>Newsletters</span></h3>
+                        <p>Get e-mail updates about our latest shop and special offers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="newsletter-box">
+                    <form action="#">
+                        <input class="subscribe" placeholder="Enter your email address" name="email" id="subscribe" type="text">
+                        <button type="submit" class="submit">subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Signup-Newsletter End -->

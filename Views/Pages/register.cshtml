@@ -1,0 +1,154 @@
+﻿      <!-- Breadcrumb Start -->
+<div class="breadcrumb-area ptb-50">
+    <div class="container">
+        <div class="breadcrumb">
+            <ul>
+                <li><a asp-controller="home" asp-action="index">Home</a></li>
+                <li asp-active-route="pages"><a asp-controller="pages" asp-action="register">Register</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Container End -->
+</div>
+<!-- Breadcrumb End -->
+<!-- Register Account Start -->
+<div class="register-account pb-50">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="register-title">
+                    <h3 class="mb-10">REGISTER ACCOUNT</h3>
+                    <p class="mb-10">
+                        If you already have an account with us, please login at the
+                        login page.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Row End -->
+        <form class="form-horizontal" action="#">
+            <fieldset>
+                <legend>Your Personal Details</legend>
+                <div class="form-group row">
+                    <label class="control-label col-sm-2" for="f-name"><span class="require">*</span>First Name</label>
+                    <div class="col-sm-10">
+                        <input type="text"
+                               class="form-control"
+                               id="f-name"
+                               placeholder="First Name" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="control-label col-sm-2" for="l-name"><span class="require">*</span>Last Name</label>
+                    <div class="col-sm-10">
+                        <input type="text"
+                               class="form-control"
+                               id="l-name"
+                               placeholder="Last Name" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="control-label col-sm-2" for="email">
+                        <span class="require">*</span>Enter you email address
+                        here...
+                    </label>
+                    <div class="col-sm-10">
+                        <input type="email"
+                               class="form-control"
+                               id="email"
+                               placeholder="Enter you email address here..." />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="control-label col-sm-2" for="number"><span class="require">*</span>Telephone</label>
+                    <div class="col-sm-10">
+                        <input type="email"
+                               class="form-control"
+                               id="number"
+                               placeholder="Telephone" />
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Your Password</legend>
+                <div class="form-group row">
+                    <label class="control-label col-sm-2" for="pwd"><span class="require">*</span>Password:</label>
+                    <div class="col-sm-10">
+                        <input type="password"
+                               class="form-control"
+                               id="pwd"
+                               placeholder="Password" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="control-label col-sm-2" for="pwd-confirm"><span class="require">*</span>Confirm Password</label>
+                    <div class="col-sm-10">
+                        <input type="password"
+                               class="form-control"
+                               id="pwd-confirm"
+                               placeholder="Confirm password" />
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="newsletter-input">
+                <legend>Newsletter</legend>
+                <div class="form-group row">
+                    <label class="col-sm-2 control-label">Subscribe</label>
+                    <div class="col-sm-10">
+                        <label class="radio-inline">
+                            <input type="radio" name="newsletter" value="1" />Yes
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio"
+                                   name="newsletter"
+                                   value="0"
+                                   checked="checked" />No
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="buttons newsletter-input">
+                <div>
+                    I have read and agree to the
+                    <a href="#" class="agree"><b>Privacy Policy</b></a>
+                    <input type="checkbox" name="agree" value="1" /> &nbsp;
+                    <input type="submit" value="Continue" class="newsletter-btn" />
+                </div>
+            </div>
+        </form>
+        <!-- Row End -->
+    </div>
+    <!-- Container End -->
+</div>
+<!-- Register Account End -->
+
+<!-- Signup Newsletter Start -->
+<div class="newsletter">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="main-news-desc">
+                    <div class="news-desc">
+                        <h3>Sign Up For <span>Newsletters</span></h3>
+                        <p>
+                            Get e-mail updates about our latest shop and special offers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="newsletter-box">
+                    <form action="#">
+                        <input class="subscribe"
+                               placeholder="Enter your email address"
+                               name="email"
+                               id="subscribe"
+                               type="text" />
+                        <button type="submit" class="submit">subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Signup-Newsletter End -->
