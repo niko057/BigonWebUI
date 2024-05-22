@@ -14,7 +14,10 @@ namespace BigonWebUI
 
             builder.Services.AddDbContext<DataContext>(cfg =>
             {
-                cfg.UseSqlServer(cstring);
+                cfg.UseSqlServer(cstring,opt =>
+                {
+                    opt.MigrationsHistoryTable("Migrations");
+                });
 
             });
             var app = builder.Build();
