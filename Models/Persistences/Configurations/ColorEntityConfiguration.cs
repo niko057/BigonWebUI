@@ -20,5 +20,8 @@ namespace BigonWebUI.Models.Persistences.Configurations
            
             builder.ToTable("Colors");
         }
+      
     }
+
+
 }

@@ -18,6 +18,10 @@ namespace BigonWebUI.Models
         }
 
         public DbSet<Color> Colors { get; set; }
+        public DbSet<Tag> Tags { get; set; }
+        public DbSet<Manufacturer> Manufacturers { get; set; }
+
+
 
       
 
