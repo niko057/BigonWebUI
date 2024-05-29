@@ -1,4 +1,6 @@
-﻿namespace BigonWebUI.Models.Entities
+﻿using BigonWebUI.Models.Entities.Common;
+
+namespace BigonWebUI.Models.Entities
 {
     public class Manufacturer:BaseEntity<int>
     {

@@ -6300,7 +6300,7 @@
             </div>
             <div class="col-md-5">
               <div class="newsletter-box">
-                <form action="#">
+                <form class="newsForm" action="#">
                   <input
                     class="subscribe"
                     placeholder="Enter your email address"
@@ -6316,3 +6316,37 @@
         </div>
       </div>
       <!-- Signup-Newsletter End -->
+
+      @section custom_js
+      {
+          <script>
+
+              $(document).ready(function () {
+                  let form =$(".newsForm");
+                  form.submit((e) => {
+                      e.preventDefault()
+
+                      let formData=new FormData(e.target)
+
+                      $.ajax({
+                          url:"@Url.Action("Subscribe","home")",
+                          method:"POST",
+                          data:formData,
+                          contentType:false,
+                          processData:false,
+                          success: function(result){
+                              if(result.success){
+                                  toastr.success(result.message,"Ugurlu",)
+                                  form[0].reset();
+                                  return;
+                              }
+                              toastr.error(result.message,"Xəta")
+                              return;
+                          }
+                      })
+                  })
+              }
+
+              
+          </script>
+      }

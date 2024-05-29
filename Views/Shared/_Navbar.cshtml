@@ -1,0 +1,47 @@
+﻿<div class="col-md-9 d-none d-md-block">
+    <!-- Header Middle Menu Start -->
+    <div class="middle-menu">
+        <nav>
+            <ul class="middle-menu-list">
+                <li><a asp-active-route="home" asp-controller="home" asp-action="index">home</a></li>
+                <li><a asp-active-route="about" asp-controller="about" asp-action="index">about us</a></li>
+                <li><a asp-active-route="contact" asp-controller="contact" asp-action="index">contact us</a></li>
+                <li>
+                    <a asp-active-route="blog" asp-controller="blog" asp-action="index">
+                        blog<i class="fa fa-angle-down"></i>
+                    </a>
+                    <!-- Home Version Dropdown Start -->
+                    <ul class="ht-dropdown dropdown-style-two">
+                        <li><a asp-active-route="blog" asp-controller="blog" asp-action="details">blog details</a></li>
+                    </ul>
+                    <!-- Home Version Dropdown End -->
+                </li>
+                <li>
+                    <a href="#">pages<i class="fa fa-angle-down"></i></a>
+                    <!-- Home Version Dropdown Start -->
+                    <ul class="ht-dropdown dropdown-style-two">
+                        <li><a asp-active-route="pages" asp-controller="pages" asp-action="login">login</a></li>
+                        <li><a asp-active-route="pages" asp-controller="pages" asp-action="register">register</a></li>
+                        <li><a asp-active-route="pages" asp-controller="pages" asp-action="error">404</a></li>
+                    </ul>
+                    <!-- Home Version Dropdown End -->
+                </li>
+                <li>
+                    <a asp-active-route="shop" asp-controller="shop" asp-action="index">
+                        shop<i class="fa fa-angle-down"></i>
+                    </a>
+                    <!-- Home Version Dropdown Start -->
+                    <ul class="ht-dropdown dropdown-style-two">
+                        <li><a asp-active-route="shop" asp-controller="shop" asp-action="product">product details</a></li>
+                        <li><a asp-active-route="shop" asp-controller="shop" asp-action="compare">compare</a></li>
+                        <li><a asp-active-route="shop" asp-controller="shop" asp-action="cart">cart</a></li>
+                        <li><a asp-active-route="shop" asp-controller="shop" asp-action="checkout">checkout</a></li>
+                        <li><a asp-active-route="shop" asp-controller="shop" asp-action="wishlist">wishlist</a></li>
+                    </ul>
+                    <!-- Home Version Dropdown End -->
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Header Middle Menu End -->
+</div>

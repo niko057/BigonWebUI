@@ -1,9 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿
+using Microsoft.AspNetCore.Mvc;
 
 namespace BigonWebUI.Controllers
 {
     public class ShopController : Controller
     {
+      
+        
         public IActionResult Index()
         {
             return View();

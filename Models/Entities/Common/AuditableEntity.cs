@@ -1,4 +1,4 @@
-﻿namespace BigonWebUI.Models.Entities
+﻿namespace BigonWebUI.Models.Entities.Common
 {
     public abstract class AuditableEntity
     {

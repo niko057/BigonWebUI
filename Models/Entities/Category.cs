@@ -2,12 +2,9 @@
 
 namespace BigonWebUI.Models.Entities
 {
-    public class Color :BaseEntity<int>
+    public class Category:BaseEntity<int>
     {
-       
         public string Name { get; set; }
-        public string HexCode { get; set; }
-
-
+        public int? ParentId { get; set; }
     }
 }

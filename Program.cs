@@ -1,3 +1,5 @@
+using BigonWebUI.Helpers;
+using BigonWebUI.Helpers.Services;
 using BigonWebUI.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -20,11 +22,19 @@ namespace BigonWebUI
                 });
 
             });
-            var app = builder.Build();
+            builder.Services.Configure<EmailOptions>(
+                cfg =>
+                {
+                    builder.Configuration.GetSection("emailAccount").Bind(cfg);
+                });
 
+            builder.Services.AddSingleton<IEmailService,EmailService>();
+
+            var app = builder.Build();
+            app.UseStaticFiles();
             app.MapControllerRoute("default", "{controller=home}/{action=index}/{id?}");
 
-            app.UseStaticFiles();
+           
 
             
 
