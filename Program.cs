@@ -31,6 +31,11 @@ namespace BigonWebUI
             builder.Services.AddSingleton<IEmailService,EmailService>();
 
             var app = builder.Build();
+
+           app.MapControllerRoute(
+            name: "areas",
+            pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+          );
             app.UseStaticFiles();
             app.MapControllerRoute("default", "{controller=home}/{action=index}/{id?}");
 
