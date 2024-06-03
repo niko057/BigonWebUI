@@ -1,5 +1,6 @@
-﻿using BigonWebUI.Models;
-using BigonWebUI.Models.Entities;
+﻿using Bigon.Data;
+using Bigon.Infrastructure.Entites;
+using Bigon.Infrastructure.Services.Abstracts;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Globalization;
@@ -11,12 +12,12 @@ namespace BigonWebUI.Controllers
     public class HomeController : Controller
     {
         private readonly DataContext _db;
-       
+        private readonly IEmailService _emailService;
 
-        public HomeController(DataContext db)
+        public HomeController(DataContext db, IEmailService emailService)
         {
             _db = db;
-          
+            _emailService = emailService;
         }
         public IActionResult Index()
         {
@@ -72,7 +73,7 @@ namespace BigonWebUI.Controllers
             string url = $"{Request.Scheme}://{Request.Host}/subscribe-approve?token={token}";
             string body = $"Please click to link accept subscription <a href=\"{url}\">Click!</a>";
 
-           // await _emailService.SendMailAsync(email, "Subscription", body);
+            await _emailService.SendMailAsync(email, "Subscription", body);
 
             return Ok(new
             {

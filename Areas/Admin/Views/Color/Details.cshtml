@@ -1,0 +1,39 @@
+﻿@model Color
+
+<h2>Color Details</h2>
+</hr>
+
+
+<h3>Name</h3>
+<p class="form-control">@Model.Name</p>
+
+
+<h3>HexCode</h3>
+<p class="form-control">@Model.HexCode</p>
+
+<h3>CreatedBy</h3>
+<p class="form-control">@Model.CreatedBy</p>
+
+<h3>CreatedAt</h3>
+<p class="form-control">@Model.CreatedAt</p>
+
+<h3>ModifiedBy</h3>
+<p class="form-control">@Model.ModifiedBy</p>
+
+<h3>ModifiedAt</h3>
+<p class="form-control">@Model.ModifiedAt</p>
+
+<h3>DeletedBy</h3>
+<p class="form-control">@Model.DeletedBy</p>
+
+<h3>DeletedAt</h3>
+<p class="form-control">@Model.DeletedAt</p>
+
+
+<div>
+
+    <a class="btn btn-dark" asp-action="index" asp-controller="color">Back</a>
+    <a class="btn btn-dark" asp-action="edit" asp-controller="color" asp-route-id="@Model.Id">Edit</a>
+</div>
+
+

@@ -1,0 +1,16 @@
+﻿@model IEnumerable<Color>
+
+@foreach (var color in Model)
+{
+    <tr>
+        <td><span color style="background:@color.HexCode"></span></td>
+        <td>@color.Name</td>
+        <td>
+            <a asp-action="details" asp-controller="color" asp-route-id="@color.Id" class="btn btn-primary"><i class="fa-solid fa-info text-white">Info</i></a>
+            <a asp-action="edit" asp-controller="color" asp-route-id="@color.Id" class="btn btn-warning"><i class="fa-solid fa-warning text-white">Edit</i></a>
+            <a onclick="removeColor(@color.Id,'@color.Name')" class="btn btn-danger"><i class="fa-solid fa-trash text-white">Remove</i></a>
+        </td>
+
+    </tr>
+}
+

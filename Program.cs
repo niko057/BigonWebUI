@@ -1,6 +1,7 @@
-using BigonWebUI.Helpers;
-using BigonWebUI.Helpers.Services;
-using BigonWebUI.Models;
+using Bigon.Data;
+using Bigon.Infrastructure.Commons;
+using Bigon.Infrastructure.Services.Abstracts;
+using Bigon.Infrastructure.Services.Concretes;
 using Microsoft.EntityFrameworkCore;
 
 namespace BigonWebUI

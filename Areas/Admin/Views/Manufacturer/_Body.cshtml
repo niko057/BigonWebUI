@@ -1,0 +1,16 @@
+﻿@model IEnumerable<Manufacturer>
+
+
+@foreach (var manufacturer in Model)
+{
+    <tr>
+
+        <td>@manufacturer.Name</td>
+        <td>
+            <a asp-action="details" asp-controller="manufacturer" asp-route-id="@manufacturer.Id" class="btn btn-primary"><i class="fa-solid fa-info text-white">Info</i></a>
+            <a asp-action="edit" asp-controller="manufacturer" asp-route-id="@manufacturer.Id" class="btn btn-warning"><i class="fa-solid fa-warning text-white">Edit</i></a>
+            <a onclick="removeManufacturer(@manufacturer.Id,'@manufacturer.Name')" class="btn btn-danger"><i class="fa-solid fa-trash text-white">Remove</i></a>
+        </td>
+
+    </tr>
+}

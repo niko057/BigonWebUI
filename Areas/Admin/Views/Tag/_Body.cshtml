@@ -1,0 +1,15 @@
+﻿@model IEnumerable<Tag>
+
+@foreach (var tag in Model)
+{
+    <tr>
+
+        <td>@tag.Name</td>
+        <td>
+            <a asp-action="details" asp-controller="tag" asp-route-id="@tag.Id" class="btn btn-primary"><i class="fa-solid fa-info text-white">Info</i></a>
+            <a asp-action="edit" asp-controller="tag" asp-route-id="@tag.Id" class="btn btn-warning"><i class="fa-solid fa-warning text-white">Edit</i></a>
+            <a onclick="removeTag(@tag.Id,'@tag.Name')" class="btn btn-danger"><i class="fa-solid fa-trash text-white">Remove</i></a>
+        </td>
+
+    </tr>
+}
