@@ -32,8 +32,7 @@ namespace BigonWebUI.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult Create(Manufacturer manufacturer)
         {
-            manufacturer.CreatedAt = DateTime.Now;
-            manufacturer.CreatedBy = 1;
+            
             _db.Manufacturers.Add(manufacturer);
             _db.SaveChanges();
             return RedirectToAction(nameof(Index));
@@ -57,8 +56,7 @@ namespace BigonWebUI.Areas.Admin.Controllers
 
             dbmanufacturer.Name = manufacturer.Name;
 
-            dbmanufacturer.ModifiedAt = DateTime.Now;
-            dbmanufacturer.ModifiedBy = 2;
+           
 
             _db.SaveChanges();
 
@@ -85,8 +83,7 @@ namespace BigonWebUI.Areas.Admin.Controllers
                     message = "Data Tapilmadi"
                 });
 
-            manufacturer.DeletedAt = DateTime.Now;
-            manufacturer.DeletedBy = 2;
+            _db.Manufacturers.Remove(manufacturer);
 
             _db.SaveChanges();
 

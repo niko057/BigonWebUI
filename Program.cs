@@ -31,6 +31,10 @@ namespace BigonWebUI
 
             builder.Services.AddSingleton<IEmailService,EmailService>();
 
+            builder.Services.AddSingleton<IDateTimeServive, DateTimeServive>();
+
+            builder.Services.AddScoped<IIdentityService, IdentityService>();
+
             var app = builder.Build();
 
            app.MapControllerRoute(

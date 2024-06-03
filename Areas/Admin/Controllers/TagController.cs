@@ -32,8 +32,7 @@ namespace BigonWebUI.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult Create(Tag tag)
         {
-            tag.CreatedAt = DateTime.Now;
-            tag.CreatedBy = 1;
+           
             _db.Tags.Add(tag);
             _db.SaveChanges();
             return RedirectToAction(nameof(Index));
@@ -57,8 +56,7 @@ namespace BigonWebUI.Areas.Admin.Controllers
 
             dbTag.Name = tag.Name;
           
-            dbTag.ModifiedAt = DateTime.Now;
-            dbTag.ModifiedBy = 2;
+           
 
             _db.SaveChanges();
 
@@ -87,8 +85,7 @@ namespace BigonWebUI.Areas.Admin.Controllers
                 });
             }
 
-            dbTag.DeletedAt = DateTime.Now;
-            dbTag.DeletedBy = 2;
+            _db.Tags.Remove(dbTag);
 
             _db.SaveChanges();
 

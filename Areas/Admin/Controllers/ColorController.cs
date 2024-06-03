@@ -31,8 +31,7 @@ namespace BigonWebUI.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult Create(Color color)
         {
-            color.CreatedAt = DateTime.Now;
-            color.CreatedBy = 1;
+           
             _db.Colors.Add(color);
             _db.SaveChanges();
             return RedirectToAction(nameof(Index));
@@ -56,8 +55,7 @@ namespace BigonWebUI.Areas.Admin.Controllers
 
             dbColor.Name= color.Name;
             dbColor.HexCode= color.HexCode;
-            dbColor.ModifiedAt= DateTime.Now;
-            dbColor.ModifiedBy= 2;
+           
 
             _db.SaveChanges();
 
@@ -84,8 +82,9 @@ namespace BigonWebUI.Areas.Admin.Controllers
                     message = "Data Tapilmadi"
                 });
 
-            dbColor.DeletedAt= DateTime.Now;
-            dbColor.DeletedBy= 2;
+            _db.Colors.Remove(dbColor);
+
+         
 
             _db.SaveChanges();
 
